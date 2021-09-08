@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-first-app';
+  warningFlag = false;
+  onWarn(){
+    this.warningFlag = true;
+  }
+  onSafe(){
+    this.warningFlag = false;
+  }
 }
